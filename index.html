@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh Fletcher Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/three.js/102/three.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <div class="top-bar">
+        <header>
+        <p class="myName" href="/index.html">Josh Fletcher</p>
+            <ul>
+                <li><a href="#about-area">About Me</a></li>
+                <li><a href="#project-area">Projects</a></li>
+                <li><a href="/Resume for Website.pdf">Resume</a></li>
+            </ul>
+            
+        </header>
+    </div>
+    
+    <div class="main">
+        <div class="hero-header">
+            <h1 class="main-hero-text">See What I Can Create</h1>
+            <script src="threeJS.js"></script>
+        </div>
+        <a id="about-area"></a>
+    </div>
+    
+    <section class="about">
+        
+        <div class="about-desc">
+            <h2 class="about-me-header">About Me</h2>
+            <p class="about-me-paragraph">I am a student and an aspiring Software Developer. My whole life I have had a passion for solving problems
+                 and finding more efficient solutions. I am currently studying Computer Science at Grand Valley State University.
+                 I am very passionate about every project I work on and am always looking for my next skill to master. </p>
+
+        </div>
+    </section>
+    
+    <div class="projects">
+        <a id="project-area"></a>
+        <h1 class="featuredProjects">Featured Projects</h1>
+        <div class="carousel">
+            <button class="carousel-button carousel-button--left is-hidden">
+                <img src="left-arrow.svg" alt="">
+            </button>
+            <div class="project-container">
+                <ul class="nav-track">
+                    <li class="slide current-slide">
+                        <div class="projectCard">
+                    
+                            <div class="titleProject">
+                                <p class="projectTitle">Wordle Clone</p>
+                                <button><img class="gitImg" src="Github Logo.png" alt="Github Logo" onclick="location.href='https://github.com/Joshua-Fletcher/Wordle-Clone-React-Project';"></button>
+                            </div>
+                            <div class="descAndGif">
+                                <p class="projectDesc">A clone of the popular game wordle using ReactJS. The game Wordle involves guessing a word using past guesses that will indocate
+                                    whether the letters in that word are in the word you are trying to guess.</p>
+                               <img class="projectImg" src="React Project GIF.gif" alt="GIF of Wordle Clone Project"> 
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <div class="projectCard2">
+                            <div class="titleProject">
+                                <p class="projectTitle">Weather App</p>
+                                <button><img class="gitImg" src="Github Logo.png" alt="Github Logo" onclick="location.href='https://github.com/Joshua-Fletcher/Weather-API-Application';"></button>
+                            </div>
+                            <div class="descAndGif">
+                                <p class="projectDesc2">Allows users to enter a city which is then parsed into an API call.
+                                    Then the information for the requested city is displayed. </p>
+                               <img class="projectImg2" src="Weather App GIF Portfolio.gif" alt="Weather API App GIF"> 
+                            </div>
+                        
+                        </div>
+                    </li>
+                    <li class="slide">
+                        
+                    </li>
+                </ul>
+                
+            </div>
+            <button class="carousel-button carousel-button--right">
+                <img src="right-arrow.svg" alt="">
+            </button>
+            <div class="carousel-nav">
+                <button class="indicator current-slide"></button>
+                <button class="indicator"></button>
+                <button class="indicator"></button>
+            </div>
+        </div>
+        
+    </div>
+    <div class="languages">
+        <div class="language-header">
+            <h2 class="language-header-title">Languages</h2>
+        </div>
+        <div class="language1">
+            <h2 class="name-language1">Java</h2>
+            <div class="skill-bar">
+                <div class="skill-amount"></div>
+            </div>
+        </div>
+        <div class="language2">
+            <h2 class="name-language2">Python </h2>
+            <div class="skill-bar2">
+                <div class="skill-amount2"></div>
+            </div>
+        </div>
+        <div class="language3">
+            <h2 class="name-language3">JavaScript</h2>
+            <div class="skill-bar3">
+                <div class="skill-amount3"></div>
+            </div>
+        </div>
+        <div class="language4">
+            <h2 class="name-language4">HTML/CSS</h2>
+            <div class="skill-bar4">
+                <div class="skill-amount4"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-bar">
+        <div class="contactMe">
+            <p class="contactMetext">Contact Me</p>
+            <a href="mailto: fletchjosh246@gmail.com" class="emailAddress">Fletchjosh246@gmail.com</a>
+        </div>
+
+        <ul class="bottom-links">
+            <li><a href="https://www.linkedin.com/in/joshjfletcher/">LinkedIn</a></li>
+            <li><a href="https://github.com/Joshua-Fletcher">GitHub</a></li>
+            <li><a href="https://gvsu.joinhandshake.com/stu/users/17681415">HandShake</a></li>
+        </ul>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="animationScript.js"></script>
+</body>
+</html>

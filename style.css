@@ -1,0 +1,389 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    overflow-x: hidden;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.top-bar ul {
+    display: flex;
+}
+a {
+    text-decoration: none;
+    padding: 0 1em;
+    display: block;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+img{
+    max-height: max(35vh,300px);
+    display: none;
+}
+.top-bar {
+    background-color: rgb(5, 5, 5);
+    
+}
+.top-bar a {
+    color: white;
+    margin-top: 1em;
+}
+.myName {
+    color: #da4d06;
+    font-weight: bold;
+    margin-left: .8em;
+}
+
+
+.main-hero-text {
+    font-size: 10vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+
+.main {
+    background-color: black;
+    overflow-x: hidden;
+    margin: auto;
+    color: #7192a2;
+    display: block;
+    text-align: center;
+    padding: 5em;
+
+}
+.about {
+    background-color: black;
+    padding: 0 6em 6em 5em;
+    text-align: center;
+    color: white;
+}
+.about-desc {
+    font-size: 1.1rem;
+    max-width: 900px;
+    margin: auto;
+}
+.about-me-paragraph {
+    font-size: .9em;
+ 
+}
+.about-me-header {
+    color: white;
+    font-size: 1.75em;
+}
+
+
+.carousel {
+    position: relative;
+    height: 600px;
+    width: 80%;
+    max-width: 950px;
+    margin: 0 auto;
+
+}
+
+.projects {
+    background-color: black;
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+}
+.project-container {
+   height: 100%;
+   position: relative;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
+   max-width: 950px;
+}
+.nav-track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+.slide {
+    position: absolute;
+    top:0;
+    bottom:0;
+    width: 100%;
+}
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    background: transparent;
+    border: none;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.carousel-button--left {
+    left: -40px;
+}
+.carousel-button--right {
+    right: -40px;
+}
+.carousel-nav {
+
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    max-width: 950px;
+}
+.indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 0;
+    background-color: rgb(128, 128, 128, .75);
+    margin: 0 10px;
+    cursor: pointer;
+}
+.indicator.current-slide {
+    background-color: white;
+}
+.featuredProjects {
+    text-align: center;
+    color: #da4d06;
+    padding-bottom: 1.5em;
+    padding-top: 1em;
+    font-size: 2.6em;
+}
+.titleProject {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.projectCard, .projectCard2, .projectCard3 {
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    border-radius: 1em;
+    width: min(100%,80vw);
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    
+
+}
+
+.projectTitle, .projectTitle2, .projectTitle3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.projectDesc, .projectDesc2, .projectDesc3 {
+    font-size: 18px;
+    padding: 0;
+    min-width: 20vw;
+    margin: auto 5vw;
+    padding-bottom: 1.3em;
+}
+
+
+.gitImg {
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    display: block;
+    
+}
+.projectCard button, .projectCard2 button{
+    border: none;
+    align-items: center;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.languages {
+    background-color: black;
+    padding: 2em;
+    padding-bottom: 10em;
+}
+.language1, .language2, .language3, .language4 {
+    align-items: center;
+    margin-left: 30vw;
+}
+
+.name-language1, .name-language2, .name-language3, .name-language4  {
+    color: white;
+
+}
+.skill-bar, .skill-bar2, .skill-bar3, .skill-bar4 {
+    background-color: grey;
+    height: 20px;
+    width: 30vw;
+    border-radius: 2em;
+}
+.skill-amount, .skill-amount2, .skill-amount3, .skill-amount4 {
+    height: 20px;
+    width: 0%;
+    background-color: #da4d06;
+    border-radius: 2em;
+}
+
+.language-header {
+    text-align: center;
+ 
+    padding-bottom: 2em;
+    padding-top: 5em;
+}
+.language-header-title {
+    color: white;
+    font-size: 2em;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.fillBar1 {
+    animation-name: fillBar1;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.fillBar2 {
+    animation-name: fillBar2;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.fillBar3 {
+    animation-name: fillBar3;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.fillBar4 {
+    animation-name: fillBar4;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fillBar1 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 77%
+    }
+}
+@keyframes fillBar2 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 65%
+    }
+}
+@keyframes fillBar3 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 62%
+    }
+}
+@keyframes fillBar4 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%
+    }
+}
+.bottom-bar {
+    background-color: rgb(5, 5, 5);
+    padding: 1.5em;
+    display: grid;
+    align-items: center;
+    color: white;
+    grid-template-columns: 1fr;
+}
+.contactMe {
+    color: #da4d06;
+    padding-bottom: 2em;
+}
+.contactMetext{
+    margin-left: 18px;
+}
+.emailAddress{
+    color: white;
+}
+.bottom-links {
+    display: flex;
+    padding-bottom: 1em;
+    color:white;
+}
+.bottom-links a {
+    color: white;
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 630px) {
+    img {
+        display:block;
+        margin: auto;
+    }
+    .myName {
+        margin-left: 1.5em;
+    }
+    .bottom-bar {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+@media only screen and (min-width: 800px) {
+
+    .projectDesc, .projectDesc2 {
+        text-align: left;
+        padding-top: 5vh;
+    }
+    
+    .about-desc {
+        font-size: 1.25rem;
+    }
+}
+@media only screen and (min-width: 900px) {
+    .main-hero-text {
+        font-size: 8vw;
+    }
+
+    .language1, .language2, .language3, .language4 {
+        margin-left: 30vw;
+    }
+    .bottom-links {
+        margin-left: 380px;
+    }
+    .contactMe {
+        margin-left: 100px;
+    }
+
+}
+@media only screen and (min-width: 1250px) {
+    
+    .language1, .language2, .language3, .language4 {
+        margin-left: 35vw;
+    }
+}
+@media only screen and (min-height: 1000px) {
+    
+    img {
+        max-height: 300px;
+    }
+}
+@media only screen and (min-height: 1000px) {
+    
+    img {
+        max-height: 300px;
+    }
+}
