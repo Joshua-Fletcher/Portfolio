@@ -7,6 +7,7 @@ body {
     background-color: black;
     overflow-x: hidden;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -49,6 +50,7 @@ img{
     position: absolute;
     left: 0;
     right: 0;
+    top: 20vh;
 }
 
 
@@ -59,7 +61,7 @@ img{
     color: #7192a2;
     display: block;
     text-align: center;
-    padding: 5em;
+
 
 }
 .about {
@@ -67,6 +69,7 @@ img{
     padding: 0 6em 6em 5em;
     text-align: center;
     color: white;
+    padding-top: 150px;
 }
 .about-desc {
     font-size: 1.1rem;
@@ -168,7 +171,7 @@ img{
 .projectCard, .projectCard2, .projectCard3 {
     background-color: rgb(255, 255, 255);
     padding: 0;
-    border-radius: 1em;
+    border-radius: .8em;
     width: min(100%,80vw);
     height: 100%;
     position: relative;
@@ -362,10 +365,10 @@ img{
         margin-left: 30vw;
     }
     .bottom-links {
-        margin-left: 380px;
+        margin-left: 100px;
     }
     .contactMe {
-        margin-left: 100px;
+        margin-left: 80px;
     }
 
 }
@@ -373,6 +376,15 @@ img{
     
     .language1, .language2, .language3, .language4 {
         margin-left: 35vw;
+    }
+    .bottom-links {
+        margin-left: 300px;
+    }
+    .contactMe {
+        margin-left: 120px;
+    }
+    .main-hero-text {
+        top: 15vh;
     }
 }
 @media only screen and (min-height: 1000px) {

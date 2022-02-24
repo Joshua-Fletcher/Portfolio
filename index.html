@@ -5,19 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josh Fletcher Portfolio</title>
+    <link rel="icon" type="img/png" href="Images/favicon.jpg">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/three.js/102/three.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/102/three.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <div class="top-bar">
         <header>
         <p class="myName" href="/index.html">Josh Fletcher</p>
             <ul>
                 <li><a href="#about-area">About Me</a></li>
                 <li><a href="#project-area">Projects</a></li>
-                <li><a href="/Resume for Website.pdf">Resume</a></li>
+                <li><a href="Documents/Resume for Website.pdf">Resume</a></li>
             </ul>
             
         </header>
@@ -26,7 +27,8 @@
     <div class="main">
         <div class="hero-header">
             <h1 class="main-hero-text">See What I Can Create</h1>
-            <script src="threeJS.js"></script>
+            <canvas id="artifactCanvas" myattr="myattr"></canvas>
+            <script type="module" src="Scripts/threeJS.js"></script>
         </div>
         <a id="about-area"></a>
     </div>
@@ -47,7 +49,7 @@
         <h1 class="featuredProjects">Featured Projects</h1>
         <div class="carousel">
             <button class="carousel-button carousel-button--left is-hidden">
-                <img src="left-arrow.svg" alt="">
+                <img src="Images/left-arrow.svg" alt="">
             </button>
             <div class="project-container">
                 <ul class="nav-track">
@@ -56,12 +58,12 @@
                     
                             <div class="titleProject">
                                 <p class="projectTitle">Wordle Clone</p>
-                                <button><img class="gitImg" src="Github Logo.png" alt="Github Logo" onclick="location.href='https://github.com/Joshua-Fletcher/Wordle-Clone-React-Project';"></button>
+                                <button><img class="gitImg" src="Images/Github Logo.png" alt="Github Logo" onclick="location.href='https://github.com/Joshua-Fletcher/Wordle-Clone-React-Project';"></button>
                             </div>
                             <div class="descAndGif">
                                 <p class="projectDesc">A clone of the popular game wordle using ReactJS. The game Wordle involves guessing a word using past guesses that will indocate
                                     whether the letters in that word are in the word you are trying to guess.</p>
-                               <img class="projectImg" src="React Project GIF.gif" alt="GIF of Wordle Clone Project"> 
+                               <img class="projectImg" src="Images/React Project GIF.gif" alt="GIF of Wordle Clone Project"> 
                             </div>
                             
                         </div>
@@ -70,12 +72,12 @@
                         <div class="projectCard2">
                             <div class="titleProject">
                                 <p class="projectTitle">Weather App</p>
-                                <button><img class="gitImg" src="Github Logo.png" alt="Github Logo" onclick="location.href='https://github.com/Joshua-Fletcher/Weather-API-Application';"></button>
+                                <button><img class="gitImg" src="Images/Github Logo.png" alt="Github Logo" onclick="location.href='https://github.com/Joshua-Fletcher/Weather-API-Application';"></button>
                             </div>
                             <div class="descAndGif">
                                 <p class="projectDesc2">Allows users to enter a city which is then parsed into an API call.
                                     Then the information for the requested city is displayed. </p>
-                               <img class="projectImg2" src="Weather App GIF Portfolio.gif" alt="Weather API App GIF"> 
+                               <img class="projectImg2" src="Images/Weather App GIF Portfolio.gif" alt="Weather API App GIF"> 
                             </div>
                         
                         </div>
@@ -87,7 +89,7 @@
                 
             </div>
             <button class="carousel-button carousel-button--right">
-                <img src="right-arrow.svg" alt="">
+                <img src="Images/right-arrow.svg" alt="">
             </button>
             <div class="carousel-nav">
                 <button class="indicator current-slide"></button>
@@ -139,7 +141,7 @@
         </ul>
     </div>
     
-    <script src="script.js"></script>
-    <script src="animationScript.js"></script>
+    <script src="Scripts/script.js"></script>
+    <script src="Scripts/animationScript.js"></script>
 </body>
 </html>
