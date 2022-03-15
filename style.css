@@ -200,7 +200,7 @@ img{
     display: block;
     
 }
-.projectCard button, .projectCard2 button{
+.projectCard button, .projectCard2 button, .projectCard3 button{
     border: none;
     align-items: center;
     padding: 0;
