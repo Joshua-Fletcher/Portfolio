@@ -276,7 +276,7 @@ img{
         width: 0%;
     }
     to {
-        width: 77%
+        width: 80%
     }
 }
 @keyframes fillBar2 {
@@ -284,7 +284,7 @@ img{
         width: 0%;
     }
     to {
-        width: 65%
+        width: 70%
     }
 }
 @keyframes fillBar3 {
@@ -292,7 +292,7 @@ img{
         width: 0%;
     }
     to {
-        width: 62%
+        width: 64%
     }
 }
 @keyframes fillBar4 {
@@ -300,7 +300,7 @@ img{
         width: 0%;
     }
     to {
-        width: 50%
+        width: 58%
     }
 }
 .bottom-bar {
